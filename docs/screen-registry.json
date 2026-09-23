@@ -1,0 +1,6 @@
+{
+  "//": "Which screens each slice must ship; order = build order. Checked by scripts/check_ui_gate.py. Guardrail file: owner approval required to change.",
+  "slices": [
+    {"id": "BOOT-001", "ui": true, "screens": ["SCR-SHELL-01"]}
+  ]
+}

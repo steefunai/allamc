@@ -1,0 +1,52 @@
+{
+  "product": "{{PRODUCT}}",
+  "kit_version": "1.0.1",
+  "docs": {
+    "brief": "docs/BRIEF.md",
+    "decisions": "docs/PRODUCT_DECISIONS.md",
+    "requirements": "docs/requirements.md",
+    "plan": "docs/PLAN.md",
+    "data_contract": "docs/DATA_CONTRACT.md",
+    "experience_spec": "docs/PRODUCT_EXPERIENCE_SPEC.md",
+    "screen_registry": "docs/screen-registry.json",
+    "definition_of_done": "docs/DEFINITION_OF_DONE.md",
+    "config_register": "docs/AUTHORITY_REQUIRED_CONFIG.md",
+    "process": "docs/PROCESS.md",
+    "quiz_bank": "docs/QUIZ_BANK.md"
+  },
+  "slice_id_pattern": "(BOOT|OPS|VS)-\\d{3}",
+  "kit_owned_files": [
+    "KIT_VERSION",
+    "docs/PROCESS.md",
+    "docs/QUIZ_BANK.md",
+    "docs/feedback/_TEMPLATE.md",
+    "docs/adr/0000-template.md",
+    "scripts/verify.sh",
+    "scripts/check_ui_gate.py",
+    "scripts/check_now.py",
+    "scripts/kit-update.sh",
+    ".githooks/pre-commit",
+    ".claude/commands/build-slice.md",
+    ".claude/commands/weekly-review.md",
+    ".claude/commands/propose-slices.md",
+    ".claude/commands/frame-product.md",
+    ".claude/commands/stage-gate.md",
+    ".claude/agents/slice-reviewer.md",
+    "codex/prompts/build-slice.md",
+    "scripts/hooks/stop-verify.sh",
+    "scripts/new-product.sh",
+    "scripts/verify.d/README.md",
+    "CHANGELOG.md",
+    "KIT_README.md"
+  ],
+  "ui_gate": {
+    "frontend_src": "frontend/src",
+    "frontend_e2e": "frontend/e2e",
+    "screenshots": "frontend/e2e/screens",
+    "playwright_configs": [
+      "frontend/playwright.config.ts",
+      "frontend/playwright.config.js",
+      "frontend/playwright.config.mts"
+    ]
+  }
+}

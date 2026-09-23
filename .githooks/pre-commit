@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Runs verify.sh on every commit (DB tiers skipped locally for speed; CI never skips them).
+# Install once per clone: git config core.hooksPath .githooks
+set -euo pipefail
+SKIP_DB="${SKIP_DB:-1}" bash scripts/verify.sh

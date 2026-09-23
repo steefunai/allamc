@@ -1,0 +1,20 @@
+name: verify
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    # PRODUCT: add services (e.g. postgres) and env here.
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Install uv
+        run: pip install uv
+      # PRODUCT: add setup steps (dependencies, migrations, browsers) between these markers.
+      # --- product setup start ---
+      # --- product setup end ---
+      - name: Verify (CI never sets SKIP_DB)
+        run: bash scripts/verify.sh

@@ -1,0 +1,9 @@
+# Guardrails change only with the owner's review (enable "Require review from Code Owners" on main).
+/scripts/            @{{OWNER}}
+/.githooks/          @{{OWNER}}
+/.github/            @{{OWNER}}
+/.claude/            @{{OWNER}}
+/kit.json            @{{OWNER}}
+/docs/PROCESS.md     @{{OWNER}}
+/docs/screen-registry.json @{{OWNER}}
+/docs/DEFINITION_OF_DONE.md @{{OWNER}}

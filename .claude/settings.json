@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash scripts/verify.sh)",
+      "Bash(SKIP_DB=1 bash scripts/verify.sh)",
+      "Bash(git status)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [
+      "Bash(git push:*)",
+      "Bash(git commit --no-verify:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Edit(scripts/verify.sh)",
+      "Edit(scripts/check_ui_gate.py)",
+      "Edit(scripts/check_now.py)",
+      "Edit(scripts/hooks/**)",
+      "Edit(.githooks/**)",
+      "Edit(.github/**)",
+      "Edit(.claude/**)",
+      "Edit(kit.json)",
+      "Edit(CODEOWNERS)",
+      "Edit(docs/PROCESS.md)",
+      "Edit(docs/screen-registry.json)",
+      "Edit(docs/DEFINITION_OF_DONE.md)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "bash scripts/hooks/stop-verify.sh", "timeout": 600 } ] }
+    ]
+  }
+}
