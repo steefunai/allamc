@@ -1,0 +1,112 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": { "name": "allamc.in Styling Contract", "version": "1.0.0" },
+  "color": {
+    "light": {
+      "bg":            { "$value": "#F6F7F9" },
+      "surface":       { "$value": "#FFFFFF" },
+      "surface-2":     { "$value": "#F0F2F5" },
+      "border":        { "$value": "#E1E5EB" },
+      "text":          { "$value": "#111827" },
+      "text-muted":    { "$value": "#5A6472" },
+      "primary":       { "$value": "#0F6B69" },
+      "primary-hover": { "$value": "#0B5654" },
+      "primary-soft":  { "$value": "#E2F1F0" },
+      "on-primary":    { "$value": "#FFFFFF" },
+      "focus":         { "$value": "#0F6B69" },
+      "success":       { "$value": "#15803D" },
+      "success-soft":  { "$value": "#E7F6EC" },
+      "warning":       { "$value": "#A15C07" },
+      "warning-soft":  { "$value": "#FDF3E1" },
+      "danger":        { "$value": "#B42318" },
+      "danger-soft":   { "$value": "#FDECEA" },
+      "info":          { "$value": "#1D4ED8" },
+      "info-soft":     { "$value": "#E8EEFD" },
+      "neutral":       { "$value": "#4B5563" },
+      "neutral-soft":  { "$value": "#EEF0F3" }
+    },
+    "dark": {
+      "bg":            { "$value": "#0E1116" },
+      "surface":       { "$value": "#161B22" },
+      "surface-2":     { "$value": "#1E242D" },
+      "border":        { "$value": "#2B333D" },
+      "text":          { "$value": "#E8ECF1" },
+      "text-muted":    { "$value": "#9AA4B2" },
+      "primary":       { "$value": "#3FB5B0" },
+      "primary-hover": { "$value": "#5CC6C1" },
+      "primary-soft":  { "$value": "#123331" },
+      "on-primary":    { "$value": "#06201F" },
+      "focus":         { "$value": "#5CC6C1" },
+      "success":       { "$value": "#4ADE80" },
+      "success-soft":  { "$value": "#12301E" },
+      "warning":       { "$value": "#F5B04A" },
+      "warning-soft":  { "$value": "#33250F" },
+      "danger":        { "$value": "#F87171" },
+      "danger-soft":   { "$value": "#3A1614" },
+      "info":          { "$value": "#7AA2F7" },
+      "info-soft":     { "$value": "#16213D" },
+      "neutral":       { "$value": "#A3ADBA" },
+      "neutral-soft":  { "$value": "#232A33" }
+    }
+  },
+  "font": {
+    "family": {
+      "sans": { "$value": "Inter, 'Noto Sans Devanagari', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" },
+      "mono": { "$value": "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" }
+    },
+    "size": {
+      "xs":  { "$value": "12px" }, "sm": { "$value": "14px" }, "md": { "$value": "16px" },
+      "lg":  { "$value": "18px" }, "xl": { "$value": "20px" }, "2xl": { "$value": "24px" },
+      "3xl": { "$value": "30px" }
+    },
+    "weight": { "regular": { "$value": 400 }, "medium": { "$value": 500 }, "semibold": { "$value": 600 } },
+    "lineHeight": { "tight": { "$value": 1.25 }, "normal": { "$value": 1.5 } }
+  },
+  "space": {
+    "0": { "$value": "0px" }, "1": { "$value": "4px" }, "2": { "$value": "8px" }, "3": { "$value": "12px" },
+    "4": { "$value": "16px" }, "5": { "$value": "20px" }, "6": { "$value": "24px" }, "8": { "$value": "32px" },
+    "10": { "$value": "40px" }, "12": { "$value": "48px" }, "16": { "$value": "64px" }
+  },
+  "radius": { "sm": { "$value": "6px" }, "md": { "$value": "10px" }, "lg": { "$value": "14px" }, "full": { "$value": "9999px" } },
+  "shadow": {
+    "sm": { "$value": "0 1px 2px rgba(16, 24, 40, 0.06)" },
+    "md": { "$value": "0 4px 12px rgba(16, 24, 40, 0.08)" }
+  },
+  "size": {
+    "touch-min":      { "$value": "48px" },
+    "row-phone":      { "$value": "56px" },
+    "row-desk":       { "$value": "48px" },
+    "icon":           { "$value": "20px" },
+    "icon-lg":        { "$value": "24px" },
+    "content-max":    { "$value": "1280px" }
+  },
+  "breakpoint": { "phone": { "$value": "360px" }, "tablet": { "$value": "768px" }, "desk": { "$value": "1280px" } },
+  "motion": {
+    "duration-fast": { "$value": "150ms" }, "duration-base": { "$value": "200ms" },
+    "easing": { "$value": "cubic-bezier(0.2, 0, 0, 1)" }
+  },
+  "status": {
+    "job.new":               { "tone": "neutral", "icon": "circle-dashed" },
+    "job.assigned":          { "tone": "info",    "icon": "user-check" },
+    "job.in_progress":       { "tone": "info",    "icon": "wrench" },
+    "job.awaiting_approval": { "tone": "warning", "icon": "hourglass" },
+    "job.completed_on_device": { "tone": "warning", "icon": "smartphone" },
+    "job.completed":         { "tone": "success", "icon": "check-circle" },
+    "job.closed":            { "tone": "neutral", "icon": "archive" },
+    "job.repair_declined":   { "tone": "neutral", "icon": "x-circle" },
+    "job.cancelled":         { "tone": "neutral", "icon": "ban" },
+    "sla.at_risk":           { "tone": "warning", "icon": "timer" },
+    "sla.breached":          { "tone": "danger",  "icon": "alarm-clock-off" },
+    "contract.active":       { "tone": "success", "icon": "shield-check" },
+    "contract.expiring":     { "tone": "warning", "icon": "calendar-clock" },
+    "contract.expired":      { "tone": "danger",  "icon": "shield-off" },
+    "invoice.issued":        { "tone": "info",    "icon": "file-text" },
+    "invoice.partially_paid":{ "tone": "warning", "icon": "circle-dollar-sign" },
+    "invoice.paid":          { "tone": "success", "icon": "badge-check" },
+    "invoice.cancelled":     { "tone": "neutral", "icon": "file-x" },
+    "sync.synced":           { "tone": "success", "icon": "cloud-check" },
+    "sync.pending":          { "tone": "warning", "icon": "cloud-upload" },
+    "sync.conflict":         { "tone": "danger",  "icon": "git-compare" },
+    "config.not_set":        { "tone": "warning", "icon": "settings-2" }
+  }
+}

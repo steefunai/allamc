@@ -1,4 +1,4 @@
-# AGENTS.md — {{PRODUCT}} project rules (Codex)
+# AGENTS.md — allamc project rules (Codex)
 
 The law of this codebase. Short on purpose: it points at the documents listed in `kit.json`.
 (Claude Code: identical rules in `CLAUDE.md`.)

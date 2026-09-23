@@ -1,7 +1,6 @@
-# PRODUCT_DECISIONS.md — allamc decision log
+# PRODUCT_DECISIONS.md — why allamc.in is shaped the way it is
 
-This is the decision log. D-01…D-75 come from the v1 discovery quiz and carry forward into v2 (see
-REBUILD_NOTES.md); D-80 onward are v2 Stage 0 decisions. The engineering plan implements these
+This is the decision log produced during product discovery. The engineering plan implements these
 decisions; the slice-reviewer uses this file to check lineage ("does this change trace to a decision?").
 Changing a decision requires a new entry that supersedes the old one, never a silent edit.
 
@@ -88,15 +87,3 @@ Status legend: **DECIDED** (owner chose) · **DEFAULT** (architect proposed, own
 | D-73 | Hosting **Google Cloud, Mumbai (asia-south1)**; backups copied to Delhi (asia-south2). | DECIDED | Cloud Run, Cloud SQL Postgres, Cloud Storage, Identity Platform. |
 | D-74 | **Shared-schema multi-tenancy with Postgres RLS (FORCE)**. | DEFAULT | ADR-0002. |
 | D-75 | **Postgres-backed job queue** (Procrastinate); Redis only when caching is proven necessary. | DEFAULT | ADR-0005. |
-
-## v2 Stage 0 (rebuild from the product kit)
-
-| ID | Decision | Status | Rationale / consequence |
-|---|---|---|---|
-| D-80 | Rebuild allamc from the product kit, starting at Stage 0; archive the v1 repo as reference only. | DECIDED | v1 wrote production code before any user validation; the method puts a prototype and 5 user tests first. |
-| D-81 | First segment: AC / RO / appliance service businesses, 2–30 technicians, one city. The product stays category-configurable. | VALIDATE | A narrow first segment makes recruiting, templates and messaging concrete; confirm with the first 5 interviews. |
-| D-82 | Core loop: sell AMC → visit scheduled/logged → technician completes on phone → customer gets report → GST invoice. Renewal reminders come immediately after. | DEFAULT | Everything outside this loop waits until Stage 3 (BRIEF out-of-scope list). |
-| D-83 | Technical decisions D-70…D-75 are held as DEFAULT and re-confirmed in the technical rounds after Stage 1. | DEFAULT | Stack choices should follow validated UX needs (offline, languages, devices). |
-| D-84 | Thin loop uses starter templates only; the no-code builder moves to "next". | DEFAULT | Supersedes the timing of D-10 (not its intent); cuts a large slice from the skeleton. |
-| D-85 | Data migration for early partners is assisted by us; the self-serve import wizard moves to "next". | DEFAULT | Supersedes the timing of D-62. |
-| D-86 | WhatsApp in the thin loop = one-tap links only (service report, invoice); Cloud API later. | DEFAULT | Supersedes the timing of D-54. |

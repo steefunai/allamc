@@ -1,4 +1,4 @@
-# DATA_CONTRACT.md — {{PRODUCT}}
+# DATA_CONTRACT.md — allamc
 
 Schema, enums, state machines, invariants, error codes, permission codes. Only the owning module
 reads/writes its tables. Amend this file before changing schema.

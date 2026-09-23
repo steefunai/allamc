@@ -1,4 +1,4 @@
-# PLAN.md — {{PRODUCT}} engineering plan
+# PLAN.md — allamc engineering plan
 
 Owns WHAT and in WHAT ORDER. HOW: CLAUDE.md/AGENTS.md. Guarantees: scripts/verify.sh + CI + DB.
 

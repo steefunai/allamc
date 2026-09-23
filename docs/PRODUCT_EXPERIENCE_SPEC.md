@@ -1,4 +1,4 @@
-# PRODUCT_EXPERIENCE_SPEC.md — {{PRODUCT}}
+# PRODUCT_EXPERIENCE_SPEC.md — allamc
 
 ## 1. Experience principles
 ## 2. Personas (device, primary jobs)
