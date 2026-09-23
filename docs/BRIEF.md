@@ -1,4 +1,4 @@
-# BRIEF.md — allamc (Stage 0)
+# BRIEF.md — allamc (Stage 0 · approved by the owner 2026-09-23, D-88)
 
 **One line:** Independent service businesses in India can sell AMCs, deliver every service visit from the
 technician's phone, and bill with GST in one simple app — so no visit, report or renewal is missed.

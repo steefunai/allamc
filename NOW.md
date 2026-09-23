@@ -2,7 +2,7 @@
 product: allamc
 mode: discovery
 stage: 0
-gate_blockers: 1
+gate_blockers: 0
 in_progress: none
 verify: unknown
 ui_debt: 0
@@ -14,7 +14,7 @@ updated: 2026-09-23
 # NOW.md — allamc (read this first, every session)
 
 **Stage gate blockers (Stage 0 → 1):**
-- Owner approval of BRIEF.md (core loop, first segment D-81, ranked assumptions, out-of-scope list)
+- none — all exit criteria MET (/stage-gate 2026-09-23); waiting on the owner to approve the stage move
 
 ## In progress
 - none
@@ -25,11 +25,12 @@ updated: 2026-09-23
 3. Stage 1: book the CA review for GST formats (REQ-002, REQ-009)
 
 ## Waiting on you
-- [ ] Approve or edit docs/BRIEF.md (especially first segment D-81)
-- [ ] Create the new allamc repo from the kit template (first commit with `git add -A`); archive the v1 repo
+- [ ] Approve the stage move 0 → 1 (evidence in the /stage-gate report)
+- [ ] Archive the v1 repo (the new repo is done: origin steefunai/allamc, commits 0531746 and 9630783)
 - [ ] Recruit 5 test users: 2 AC/appliance service owners or office staff, 3 of their technicians
 - [ ] Create the Claude Project "allamc" and upload BRIEF, decisions, requirements, prototype-screens, NOW
 
 ## Open VALIDATE items
-D-05 marketplace model · D-40 GST details (CA) · D-53 OEM flows · D-54 WhatsApp rules · D-60 pricing ·
-D-81 first segment · D-83 technical re-confirmation
+Stage 1 (prototype tests): D-81 first segment · D-60 pricing · D-61 free tier · D-33/D-35/D-55 technician
+use · D-56 renewals pain · D-10/D-11 templates · D-34 offline · D-40 GST (CA) · D-54 WhatsApp rules
+After Stage 1: D-83 technical re-confirmation · Later tracks: D-05 marketplace · D-53 OEM flows
