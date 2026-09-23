@@ -1,31 +1,33 @@
 ---
 product: allamc
 mode: discovery
-stage: 0
-gate_blockers: 0
+stage: 1
+gate_blockers: 3
 in_progress: none
 verify: unknown
 ui_debt: 0
 last_user_session: never
 last_weekly_review: never
-waiting_on_owner: 4
+waiting_on_owner: 3
 updated: 2026-09-23
 ---
 # NOW.md — allamc (read this first, every session)
 
-**Stage gate blockers (Stage 0 → 1):**
-- none — all exit criteria MET (/stage-gate 2026-09-23); waiting on the owner to approve the stage move
+**Stage gate blockers (Stage 1 → 2):**
+- [owner] 5 target users complete the core loop in the clickable prototype unaided (0/5; notes in docs/feedback/)
+- [owner] Prototype screens approved
+- [agent + owner] Top VALIDATE items resolved or scheduled (D-81, D-60, D-61, D-33/D-35/D-55, D-56, D-10/D-11, D-34, D-40 CA, D-54)
 
 ## In progress
 - none
 
 ## Next (ranked; refill with /propose-slices when fewer than 3)
-1. Stage 1: build the clickable prototype of the core loop (docs/prototype-screens.md)
-2. Stage 1: 5 user tests (2 owners/office staff, 3 technicians on budget Android, Hindi)
-3. Stage 1: book the CA review for GST formats (REQ-002, REQ-009)
+1. [agent] Build the clickable prototype of the core loop, P1–P10, English + Hindi (docs/prototype-screens.md)
+2. [agent] Write the test/interview script mapping each riskiest assumption to its VALIDATE decision
+3. [owner] Run 5 user tests (2 owners/office staff, 3 technicians on budget Android, Hindi)
+4. [owner] Book the CA review for GST formats (REQ-002, REQ-009, D-40)
 
 ## Waiting on you
-- [ ] Approve the stage move 0 → 1 (evidence in the /stage-gate report)
 - [ ] Archive the v1 repo (the new repo is done: origin steefunai/allamc, commits 0531746 and 9630783)
 - [ ] Recruit 5 test users: 2 AC/appliance service owners or office staff, 3 of their technicians
 - [ ] Create the Claude Project "allamc" and upload BRIEF, decisions, requirements, prototype-screens, NOW
